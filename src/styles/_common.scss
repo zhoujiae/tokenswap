@@ -1,0 +1,125 @@
+a,
+a:link,
+a:visited,
+a:hover,
+a:active {
+  color: rgba(1, 212, 149, 1);
+  text-decoration: none;
+}
+
+.el-menu--horizontal .el-menu .el-menu-item,
+.el-menu--horizontal .el-menu .el-submenu__title {
+  height: 52px;
+  padding: 8px;
+}
+
+
+.header-container {
+  .header {
+    .header-right {
+      .el-menu {
+        background-color: transparent;
+      }
+      .el-menu.el-menu--horizontal {
+        border-bottom: none;;
+      }
+      .el-menu--horizontal>.el-submenu.is-active .el-submenu__title {
+        border-bottom: none;
+      }
+      .el-menu-item {
+        color: #00D9C7;
+        font-size: 16px;
+        &:hover {
+          background: transparent;
+          color: #00D9C7;
+        }
+      }
+
+      >.el-menu-item.is-active {
+        border-bottom: none;
+        color: #00D9C7;
+      }
+
+      .el-submenu .el-submenu__title {
+        color: #00D9C7 !important;
+      }
+      .el-menu--horizontal>.el-submenu .el-submenu__title {
+        font-size: 16px;
+      }
+
+      .el-menu--horizontal>.el-submenu .el-submenu__title:hover {
+        background: transparent;
+      }
+      .el-menu--horizontal > .el-menu-item.is-active {
+        border-bottom: none;
+      }
+      .el-menu-item:hover, .el-menu-item:focus {
+        background-color: transparent;
+      }
+      .el-menu--horizontal > .el-menu-item {
+        border-bottom: none;
+      }
+    }
+  }
+}
+.el-collapse-item__header {
+  background-color: transparent;
+  color: #fff;
+  font-size: 20px;
+  border-bottom: none;
+  height: 80px;
+  line-height: 80px;
+  font-weight: 500px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  .num {
+    display: inline-block;
+    width: 100px;
+  }
+}
+.el-collapse-item__wrap {
+  background-color: transparent;
+  border-bottom: 1px solid #555555;
+  .el-collapse-item__content {
+    font-size: 15px;
+    color: rgba(255,255,255,.7);
+    line-height: 21px;
+    margin-left: 100px;
+    padding-bottom: 60px;
+  }
+}
+.el-collapse {
+  border-top: none;
+  border-bottom: none;;
+}
+@include responsive($sm) {
+  .el-collapse-item__header {
+    background-color: transparent;
+    color: #fff;
+    font-size: 14px;
+    border-bottom: none;
+    height: 50px;
+    line-height: 50px;
+    font-weight: 500px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    .num {
+      display: inline-block;
+      margin-right: 10px;
+    }
+  }
+  .el-collapse-item__wrap {
+    background-color: transparent;
+    .el-collapse-item__content {
+      font-size: 12px;
+      color: #fff;
+      line-height: 21px;
+    }
+  }
+  .el-collapse {
+    border-top: none;
+    border-bottom: none;;
+  }
+}
